@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href=home-page.html><img src="logo.png" class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                
+                    <li><a class="active" href="home-page.html">Home</a></li>
+                    <li><a href="gallery.html">Our Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="#">Engineheaven@gmail.com</a></li>
+                    <li><a href="#">0639123476</a></li>
+    
+                </ul>
+            </nav>
+            <img src="white-menu-icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <H1>ENGINE HEAVEN</H1>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure facere nisi. Ut pariatur nesciunt culpa consectetur, ratione dolore tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure facere nisi. Ut pariatur nesciunt culpa consectetur,
+                ratione dolore tenetur</p>
+                <button type="button">See our gallery</button>
+            </div>
+            <div class="col-2">
+                <img src="scroll-pics/berline.png">
+                <img src="scroll-pics/camion.png">
+                <img src="scroll-pics/citadine.png">
+                <img src="scroll-pics/compact.png">
+                <img src="scroll-pics/engin de chantier.png">
+                <img src="scroll-pics/moto.png">
+                <img src="scroll-pics/utilitaire.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    
+    
+    
+    <footer class="footer">
+        <div class="contain">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Cookie policy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+    
+    
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Strategy</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Payment Options </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram "></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight=="0px")
+            {
+                menuList.style.maxHeight = "280px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

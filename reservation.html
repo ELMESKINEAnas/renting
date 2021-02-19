@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- style css -->
+    <link rel="stylesheet" href="reservation.css" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+  <body>
+    <!-- header -->
+    
+    <div class="container">
+      <div class="navbar">
+        <a href=home-page.html><img src="logo.png" class="logo"></a>
+        <nav>
+          <ul id="menuList">
+    
+            <li><a class="active" href="home-page.html">Home</a></li>
+            <li><a href="gallery.html">Our Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="#">Engineheaven@gmail.com</a></li>
+            <li><a href="#">0639123476</a></li>
+    
+          </ul>
+        </nav>
+        <img src="white-menu-icon.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
+      
+      <div class="main-content">
+        <div class="concept concept-five">
+          <h1 class="word">
+            <span class="char">R</span>
+            <span class="char">E</span>
+            <span class="char">S</span>
+            <span class="char">E</span>
+            <span class="char">R</span>
+            <span class="char">V</span>
+            <span class="char">A</span>
+            <span class="char">T</span>
+            <span class="char">I</span>
+            <span class="char">O</span>
+            <span class="char">N</span>
+      
+          </h1>
+        </div>
+      </div>
+      <section>
+      
+        <div class="veh-types">
+          <form action="">
+            <label for="">type du véhicule</label>
+            <select name="" id="vehicule" onchange="_vehicule()">
+              <option value="choix">--select one--</option>
+              <option value="moto">Moto</option>
+              <option value="compact">Compact</option>
+              <option value="citadin">Citadin</option>
+              <option value="utilitaire">Utilitaire</option>
+              <option value="engin_de_chantier">engin de chantier</option>
+              <option value="berlin">Berlin</option>
+              <option value="camion">Camion</option>
+            </select>
+      
+            <label for="">boite à vitesse</label>
+            <select name="" id="boite">
+              <option value="">--select one--</option>
+            </select>
+      
+            <label for="">type du carburant</label>
+            <select name="" id="carburant" onchange="_carburant()">
+              <option value="">--select one--</option>
+            </select>
+      
+            <label for="">Date de départ</label>
+            <input type="date" id="start" name="" value="" />
+      
+            <label for="">Date de retour</label>
+            <input type="date" id="end" name="" value="" />
+      
+            <input type="submit" id="valider" value="submit" onclick="cacul_prix()" />
+          </form>
+        </div>
+      </section>
+      <!--end reservation -->
+    </div>
+    
+<!-- end header -->
+
+
+    
+    <!-- reservation -->
+    <!-- <section>
+      
+      <div class="veh-types">
+        <form action="">
+          <label for="">type du véhicule</label>
+          <select name="" id="vehicule" onchange="_vehicule()">
+            <option value="choix">--select one--</option>
+            <option value="moto">Moto</option>
+            <option value="compact">Compact</option>
+            <option value="citadin">Citadin</option>
+            <option value="utilitaire">Utilitaire</option>
+            <option value="engin_de_chantier">engin de chantier</option>
+            <option value="berlin">Berlin</option>
+            <option value="camion">Camion</option>
+          </select>
+
+          <label for="">boite à vitesse</label>
+          <select name="" id="boite">
+            <option value="">--select one--</option>
+          </select>
+
+          <label for="">type du carburant</label>
+          <select name="" id="carburant" onchange="_carburant()">
+            <option value="">--select one--</option>
+          </select>
+
+          <label for="">Date de départ</label>
+          <input type="date" id="start" name="" value="" />
+
+          <label for="">Date de retour</label>
+          <input type="date" id="end" name="" value="" />
+
+          <input
+            type="submit"
+            id="valider"
+            value="submit"
+            onclick="cacul_prix()"
+          />
+        </form>
+      </div>
+    </section> -->
+    <!--end reservation -->
+
+
+    <!-- footer -->
+    
+    
+    
+    <footer class="footer">
+      <div class="contain">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+    
+    
+        <div class="footer-col">
+          <h4>Get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Strategy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Payment Options </a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram "></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <!-- jsPDF library -->
+    <script src="js/jsPDF/dist/jspdf.min.js"></script>
+    <script src="reservation.js"></script>
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "280px";
+        }
+        else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- style css -->
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+
+  <body>
+    
+
+    
+    <section>
+      <!-- header -->
+      <div class="container">
+        <div class="navbar">
+          <a href=home-page.html><img src="logo.png" class="logo"></a>
+          <nav>
+            <ul id="menuList">
+      
+              <li><a class="active" href="home-page.html">Home</a></li>
+              <li><a href="gallery.html">Our Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
+              <li><a href="#">Engineheaven@gmail.com</a></li>
+              <li><a href="#">0639123476</a></li>
+      
+            </ul>
+          </nav>
+          <img src="white-menu-icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <!-- end header -->
+      
+
+        
+        <!-- start contact -->
+
+            <h2>Contact us</h2>
+            <div class="contact-contact">
+              <form action="">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Full name.." />
+            
+                <label for="eemail">Your Email</label>
+                <input type="email" id="eemail" name="youremail" placeholder="Your email.." />
+            
+                <label for="ssujet">Sujet</label>
+                <input type="text" id="ssujet" name="yoursujet" placeholder="sujet.." />
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height: 200px"></textarea>
+              </form>
+              <button class="show btn" onclick="get_contact()">Envoyer</button>
+              <div class="modal">
+                <div class="modal-box">
+                  <span class="close-button">X</span>
+                  <div id="ModalContact"></div>
+                </div>
+              </div>
+            </div>
+            <h2>Our Location</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369.7222640456268!2d-9.23564057577632!3d32.2930831448634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac212a6fa3c381%3A0xef792bb829a64e65!2sAvene%20Sidi%20Mohamed%20Ben%20Abdallah%2C%20Safi!5e0!3m2!1sfr!2sma!4v1613729662285!5m2!1sfr!2sma"
+              width="100%" height="450" frameborder="0" style="border-radius:25px" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+   </section>
+    <!-- Javascript -->
+    <script src="contact.js"></script>
+
+    
+    <!-- footer -->
+    
+    
+    
+    <footer class="footer">
+      <div class="contain">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+    
+    
+        <div class="footer-col">
+          <h4>Get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Strategy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Payment Options </a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram "></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "280px";
+        }
+        else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
